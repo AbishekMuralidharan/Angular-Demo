@@ -34,6 +34,7 @@ export class LoginComponent {
         alert('Check Username or Password');
         console.log("Github")
         console.log("bala");
+        console.log("praba change the git")
       }
     })
   }
