@@ -12,27 +12,28 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  
-  loginObj:any = {
+
+  loginObj: any = {
     "EmailId": "",
     "Password": ""
   };
 
   http = inject(HttpClient)
 
-  constructor(private router:Router){
+  constructor(private router: Router) {
 
   }
 
-  onLogin(){
-    this.http.post("https://freeapi.miniprojectideas.com/api/User/Login", this.loginObj).subscribe((res:any) => {
-      if(res.result){
+  onLogin() {
+    this.http.post("https://freeapi.miniprojectideas.com/api/User/Login", this.loginObj).subscribe((res: any) => {
+      if (res.result) {
         alert('Login Sucees');
         localStorage.setItem("angular18login", this.loginObj);
         this.router.navigateByUrl("/dashboard")
-      }else{
+      } else {
         alert('Check Username or Password');
         console.log("Github")
+        console.log("bala");
       }
     })
   }
