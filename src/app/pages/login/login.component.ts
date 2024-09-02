@@ -35,7 +35,7 @@ export class LoginComponent {
         console.log("Github")
         console.log("bala");
         console.log("praba change the git")
-        console.log("Testing the GITHUB")
+        console.log("Small Changes")
       }
     })
   }
