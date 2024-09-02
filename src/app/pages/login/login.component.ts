@@ -32,6 +32,7 @@ export class LoginComponent {
         this.router.navigateByUrl("/dashboard")
       }else{
         alert('Check Username or Password');
+        console.log("Github")
       }
     })
   }
